@@ -22,6 +22,7 @@ html ,body{
     min-height: 100vh;/*Tamanho minimo do meu html e body que significa 100% da view port*/
     background-color: gray;
     font-family: var(--fonte1);
+    
 }
 
 header{
@@ -60,6 +61,18 @@ section{
     line-height: 2em;/*Espaçamento entre as linhas*/
     font-family: var(--fonte3);
     font-size: 3.5vw;
+}
+
+section#img1{
+    background-image:url('arquivos/imagens/background001.jpg');
+}
+
+section#img2{
+
+}
+
+section p{
+    padding-bottom: 2em;
 }
 
 section.normal{
