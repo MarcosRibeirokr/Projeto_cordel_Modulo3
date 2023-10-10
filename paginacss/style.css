@@ -2,34 +2,44 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{                      /*Selector global*/
+
+:root{ /*Variaveis no css*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{                      /*Seletor global*/
     margin: 0px;
     padding: 0px; 
     border-radius: 0px;
+    font-size: 1em;
 }
 
 html ,body{
     min-height: 100vh;/*Tamanho minimo do meu html e body que significa 100% da view port*/
     background-color: gray;
-
+    font-family: var(--fonte1);
 }
 
 header{
     background-color: black;
-    font-family: Sriracha;
     color: white;
     text-align: center;
 }
 
 header > h1{
     padding-top: 50px;
+    font-family: var(--fonte2);
     font-variant: small-caps; /*Faz com que as primeiras letras de cada palavra sejam maiores*/
+    font-size: 8vw; /*Estou fazendo com que a letra seja 10% da janela da medida lateral*/
 }
 
 header > p {
     padding-bottom: 50px;
+    font-size: 1em;
 }
 
 a{
@@ -48,6 +58,8 @@ section{
     padding-bottom: 10vh;
     padding-left: 40px;
     line-height: 2em;/*Espaçamento entre as linhas*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -61,8 +73,10 @@ section.fundofoto{
 }
 
 section.fundofoto > p{
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.251);
-    width: 350px;
+    
 }
 
 
